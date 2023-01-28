@@ -1,4 +1,4 @@
-import { Facade } from "./classes/Facade";
+import { Facade } from "./classes/facade";
 
 const facade = new Facade();
 

@@ -1,6 +1,6 @@
-import { GetId } from "./GetId";
-import { GetSalaryPerHour } from "./GetSalaryPerHour";
-import { GetTotalSalary } from "./GetTotalSalary";
+import { GetId } from "./get-id";
+import { GetSalaryPerHour } from "./get-salary-per-hour";
+import { GetTotalSalary } from "./get-total-salary";
 
 export class Facade {
     execute() {

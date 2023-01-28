@@ -1,4 +1,4 @@
-import { EmailValidatorAdapter } from "./classes/EmailValidatorAdapter";
+import { EmailValidatorAdapter } from "./classes/email-validator-adapter";
 
 const adapter = new EmailValidatorAdapter();
 

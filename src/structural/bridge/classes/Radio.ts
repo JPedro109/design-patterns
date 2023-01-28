@@ -1,6 +1,6 @@
-import { IImplemetation } from "../interfaces/IImplemetation";
+import { ImplemetationProtocol } from "../protocols/implemetation-protocol";
 
-export class Radio implements IImplemetation {
+export class Radio implements ImplemetationProtocol {
   private volume = 10;
   private power = false;
   private name = "Radio";

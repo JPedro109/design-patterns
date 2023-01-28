@@ -1,4 +1,4 @@
-import { DeliveryLocation } from "../classes/DeliveryLocation";
+import { DeliveryLocation } from "../classes/delivery-location";
 
 export type DeliveryLocationData = {
   readonly street: string;

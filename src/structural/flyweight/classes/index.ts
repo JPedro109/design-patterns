@@ -1,4 +1,4 @@
-import { DeliveryFactory } from "./DeliveryFactory";
+import { DeliveryFactory } from "./delivery-factory";
 
 export const deliveryContext = (
   factory: DeliveryFactory,

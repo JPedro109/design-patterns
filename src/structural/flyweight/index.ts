@@ -1,4 +1,4 @@
-import { DeliveryFactory } from "./classes/DeliveryFactory";
+import { DeliveryFactory } from "./classes/delivery-factory";
 import { deliveryContext } from "./classes";
 
 const factory = new DeliveryFactory();

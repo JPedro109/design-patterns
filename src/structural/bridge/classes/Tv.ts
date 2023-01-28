@@ -1,6 +1,6 @@
-import { IImplemetation } from "../interfaces/IImplemetation";
+import { ImplemetationProtocol } from "../protocols/implemetation-protocol";
 
-export class Tv implements IImplemetation {
+export class Tv implements ImplemetationProtocol {
   private volume = 10;
   private power = false;
   private name = "TV";

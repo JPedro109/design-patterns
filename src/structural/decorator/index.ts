@@ -1,5 +1,5 @@
-import { DecoratorPen } from "./classes/DecoratorPen";
-import { Pen } from "./classes/Pen";
+import { DecoratorPen } from "./classes/decorator-pen";
+import { Pen } from "./classes/pen";
 
 const pen = new Pen();
 console.log(pen.getName());

@@ -1,9 +1,9 @@
-import { IAddress, ISystemUser } from "../interfaces/ISystemUser";
-import { AdminUser } from "./AdminUser";
+import { AddressProtocol, SystemUserProtocol } from "../protocols/system-user-protocol";
+import { AdminUser } from "./admin-user";
 
-export class SystemUserProxy implements ISystemUser {
-    private realUser: ISystemUser;
-    private realUserAddresses: IAddress[];
+export class SystemUserProxy implements SystemUserProtocol {
+    private realUser: SystemUserProtocol;
+    private realUserAddresses: AddressProtocol[];
 
     username: string;
     password: string;
@@ -13,7 +13,7 @@ export class SystemUserProxy implements ISystemUser {
         this.password = password;
     }
 
-    private createUser(): ISystemUser {
+    private createUser(): SystemUserProtocol {
         if (this.realUser == null) {
           this.realUser = new AdminUser(this.username, this.password);
         }
@@ -21,7 +21,7 @@ export class SystemUserProxy implements ISystemUser {
         return this.realUser;
       }
     
-      async getAddresses(): Promise<IAddress[]> {
+      async getAddresses(): Promise<AddressProtocol[]> {
         this.realUser = this.createUser();
     
         if (this.realUserAddresses == null) {

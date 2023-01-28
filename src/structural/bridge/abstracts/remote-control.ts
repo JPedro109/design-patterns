@@ -1,7 +1,7 @@
-import { IImplemetation } from "../interfaces/IImplemetation";
+import { ImplemetationProtocol } from "../protocols/implemetation-protocol";
 
 export class RemoteControl {
-  constructor(protected implementation: IImplemetation) {}
+  constructor(protected implementation: ImplemetationProtocol) {}
 
   togglePower(): void {
     this.implementation.setPower(!this.implementation.getPower());

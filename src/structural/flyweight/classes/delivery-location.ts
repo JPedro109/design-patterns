@@ -1,7 +1,7 @@
-import { IDelivery } from "../interfaces/IDelivery";
-import { DeliveryLocationData } from "../types/DeliveryTypes";
+import { DeliveryProtocol } from "../protocols/delivery-protocol";
+import { DeliveryLocationData } from "../types/delivery-types";
 
-export class DeliveryLocation implements IDelivery {
+export class DeliveryLocation implements DeliveryProtocol {
   constructor(private readonly intrinsicState: DeliveryLocationData) {}
 
   delivery(name: string, number: string): void {

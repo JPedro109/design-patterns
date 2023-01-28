@@ -1,6 +1,6 @@
-import { DeliveryLocationDictionary, DeliveryLocationData } from "../types/DeliveryTypes";
-import { IDelivery } from "../interfaces/IDelivery";
-import { DeliveryLocation } from "./DeliveryLocation";
+import { DeliveryLocationDictionary, DeliveryLocationData } from "../types/delivery-types";
+import { DeliveryProtocol } from "../protocols/delivery-protocol";
+import { DeliveryLocation } from "./delivery-location";
   
 export class DeliveryFactory {
     private locations: DeliveryLocationDictionary = {};
@@ -11,7 +11,7 @@ export class DeliveryFactory {
         .join('_');
     }
   
-    makeLocation(intrinsicState: DeliveryLocationData): IDelivery {
+    makeLocation(intrinsicState: DeliveryLocationData): DeliveryProtocol {
       const key = this.createId(intrinsicState);
       if (key in this.locations) return this.locations[key];
       this.locations[key] = new DeliveryLocation(intrinsicState);

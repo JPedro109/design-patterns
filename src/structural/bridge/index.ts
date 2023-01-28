@@ -1,7 +1,7 @@
-import { RemoteControl } from "./abstracts/RemoteControl";
-import { RemoteControlWithVolume } from "./abstracts/RemoteControlWithVolume";
-import { Tv } from "./classes/Tv";
-import { Radio } from "./classes/Radio";
+import { RemoteControl } from "./abstracts/remote-control";
+import { RemoteControlWithVolume } from "./abstracts/remote-control-with-volume";
+import { Tv } from "./classes/tv";
+import { Radio } from "./classes/radio";
 
 export function clientCode(
   abstraction: RemoteControl | RemoteControlWithVolume,

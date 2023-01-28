@@ -1,5 +1,4 @@
-import { AbstractProduct } from "../abstracts/AbstractProduct";
-import { IProduct } from "../interfaces/IProduct";
+import { AbstractProduct } from "../abstracts/abstract-product";
 
 export class DecoratorPen extends AbstractProduct {
 

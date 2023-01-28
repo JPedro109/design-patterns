@@ -1,4 +1,4 @@
-import { SystemUserProxy } from './classes/SystemUserProxy';
+import { SystemUserProxy } from './classes/system-user-proxy';
 
 async function clientCode(): Promise<void> {
   const user = new SystemUserProxy('Luiz', 'João Pedro');

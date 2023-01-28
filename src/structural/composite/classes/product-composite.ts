@@ -1,4 +1,4 @@
-import { ProductComponent } from "./ProductComponent";
+import { ProductComponent } from "./product-component";
 
 export class ProductComposite extends ProductComponent {
     private children: ProductComponent[] = [];

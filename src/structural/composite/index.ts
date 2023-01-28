@@ -1,5 +1,5 @@
-import { ProductComposite } from "./classes/ProductComposite";
-import { ProductLeaf } from "./classes/ProductLeaf";
+import { ProductComposite } from "./classes/product-composite";
+import { ProductLeaf } from "./classes/product-leaf";
 
 const pen = new ProductLeaf("pen", 2);
 const pencil = new ProductLeaf("pencil", 3);

@@ -1,4 +1,4 @@
-export interface IImplemetation {
+export interface ImplemetationProtocol {
     getName(): string;
     setPower(powerStatus: boolean): void;
     getPower(): boolean;

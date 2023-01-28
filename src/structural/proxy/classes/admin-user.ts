@@ -1,6 +1,6 @@
-import { IAddress, ISystemUser } from "../interfaces/ISystemUser";
+import { AddressProtocol, SystemUserProtocol } from "../protocols/system-user-protocol";
 
-export class AdminUser implements ISystemUser {
+export class AdminUser implements SystemUserProtocol {
     username: string;
     password: string;
 
@@ -9,7 +9,7 @@ export class AdminUser implements ISystemUser {
         this.password = password;
     }
 
-    async getAddresses(): Promise<IAddress[]> {
+    async getAddresses(): Promise<AddressProtocol[]> {
         return new Promise((resolve) => {
           return setTimeout(() => {
             return resolve([
