@@ -1,5 +1,5 @@
-import { ImageEditorOriginator } from "./classes/ImageEditorOriginator";
-import { ImageEditorBackupManager } from "./classes/ImageEditorBackupManager";
+import { ImageEditorOriginator } from "./classes/image-editor-originator";
+import { ImageEditorBackupManager } from "./classes/image-editor-backup-manager";
 
 const imageEditor = new ImageEditorOriginator("media/image.png", "png");
 const backupManager = new ImageEditorBackupManager(imageEditor);

@@ -1,3 +1,3 @@
-export interface IObserver {
+export interface ObserverProtocol {
     update(...args: unknown[]): void;
 }

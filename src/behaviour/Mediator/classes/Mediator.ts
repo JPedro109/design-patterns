@@ -1,4 +1,4 @@
-import { Seller } from "./Seller";
+import { Seller } from "./seller";
 import { SellerProduct } from "../types";
 
 export class Mediator {

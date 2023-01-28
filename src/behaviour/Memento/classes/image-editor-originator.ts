@@ -1,5 +1,5 @@
-import { IMemento } from "../interfaces/IMemento";
-import { Memento } from "./Memento";
+import { IMemento } from "../protocols/IMemento";
+import { Memento } from "./memento";
 
 export class ImageEditorOriginator {
   constructor(private filePath: string, private fileFormat: string) {}

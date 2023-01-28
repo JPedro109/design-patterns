@@ -1,7 +1,7 @@
-import { ISmartHouseCommand } from '../interfaces/ISmartHouseCommand';
-import { SmartHouseLight } from './SmartHouseLight';
+import { SmartHouseCommandProtocol } from '../protocols/smart-house-protocol';
+import { SmartHouseLight } from './smart-house-light';
 
-export class LightIntensityCommand implements ISmartHouseCommand {
+export class LightIntensityCommand implements SmartHouseCommandProtocol {
   constructor(private readonly light: SmartHouseLight) {}
 
   execute(): void {

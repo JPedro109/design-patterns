@@ -1,4 +1,4 @@
-import { BaseChain } from "./BaseChain";
+import { BaseChain } from "./base-chain";
 import { User } from "../types";
 
 export class EmailValidator extends BaseChain {

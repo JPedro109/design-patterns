@@ -1,6 +1,6 @@
-import { Mediator } from "./classes/Mediator";
-import { Seller } from "./classes/Seller";
-import { Buyer } from "./classes/Buyer";
+import { Mediator } from "./classes/mediator";
+import { Seller } from "./classes/seller";
+import { Buyer } from "./classes/buyer";
 
 const mediator = new Mediator();
 

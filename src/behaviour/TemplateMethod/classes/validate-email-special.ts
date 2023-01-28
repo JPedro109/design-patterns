@@ -1,4 +1,4 @@
-import { EmailValidateAbstract } from "../abstracts/EmailValidateAbstract";
+import { EmailValidateAbstract } from "../abstracts/email-validate-abstract";
 
 export class ValidateEmailSpecial extends EmailValidateAbstract {
 

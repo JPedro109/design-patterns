@@ -1,5 +1,5 @@
-import { MainDiscountStrategy } from "./classes/MainDiscountStrategy";
-import { SecondaryDiscountStrategy } from "./classes/SecondaryDiscountStrategy";
+import { MainDiscountStrategy } from "./classes/main-discount-strategy";
+import { SecondaryDiscountStrategy } from "./classes/secondary-discount-strategy";
 import { Store } from "./classes/Store";
 
 const storeMain = new Store();

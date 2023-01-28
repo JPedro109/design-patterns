@@ -1,7 +1,7 @@
-import { BaseChain } from "./classes/BaseChain";
-import { EmailValidator } from "./classes/EmailValidator";
-import { NameValidator } from "./classes/NameValidator";
-import { AgeValidator } from "./classes/AgeValidator";
+import { BaseChain } from "./classes/base-chain";
+import { EmailValidator } from "./classes/email-validator";
+import { NameValidator } from "./classes/name-validator";
+import { AgeValidator } from "./classes/age-validator";
 
 const chain = new BaseChain();  
 

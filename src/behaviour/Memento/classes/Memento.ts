@@ -1,4 +1,4 @@
-import { IMemento } from "../interfaces/IMemento";
+import { IMemento } from "../protocols/IMemento";
 
 export class Memento implements IMemento {
   constructor(

@@ -1,9 +1,9 @@
-import { IShoppingOrderState } from "../interfaces/IShoppingOrderState";
-import { ShoppingOrder } from "./ShoppingOrder";
-import { OrderApproved } from "./OrderApproved";
-import { OrderRejected } from "./OrderRejected";
+import { ShoppingOrderStateProtocol } from "../protocols/shopping-order-state-protocol";
+import { ShoppingOrder } from "./shopping-order";
+import { OrderApproved } from "./order-approved";
+import { OrderRejected } from "./order-rejected";
 
-export class OrderPending implements IShoppingOrderState {
+export class OrderPending implements ShoppingOrderStateProtocol {
   private name = "OrderPending";
 
   constructor(private order: ShoppingOrder) {}

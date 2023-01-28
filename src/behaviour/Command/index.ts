@@ -1,7 +1,7 @@
-import { SmartHouseLight } from './classes/SmartHouseLight';
-import { SmartHouseApp } from './classes/SmartHouseApp';
-import { LightIntensityCommand } from './classes/LightIntensityCommand';
-import { LightPowerCommand } from './classes/LightPowerCommand';
+import { SmartHouseLight } from './classes/smart-house-light';
+import { SmartHouseApp } from './classes/smart-house-app';
+import { LightIntensityCommand } from './classes/light-intensity-command';
+import { LightPowerCommand } from './classes/light-power-command';
 
 const bedroomLight = new SmartHouseLight('Luz Quarto');
 const bathroomLight = new SmartHouseLight('Luz Banheiro');

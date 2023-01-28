@@ -1,5 +1,5 @@
-import { ValidateEmailMain } from "./classes/ValidateEmailMain";
-import { ValidateEmailSpecial } from "./classes/ValidateEmailSpecial";
+import { ValidateEmailMain } from "./classes/validate-email-main";
+import { ValidateEmailSpecial } from "./classes/validate-email-special";
 
 const validateEmailMain = new ValidateEmailMain("email@main.com");
 validateEmailMain.templateMethod();

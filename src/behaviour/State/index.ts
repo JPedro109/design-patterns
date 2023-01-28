@@ -1,4 +1,4 @@
-import { ShoppingOrder } from "./classes/ShoppingOrder";
+import { ShoppingOrder } from "./classes/shopping-order";
 
 const order = new ShoppingOrder(); 
 order.approvePayment(); 

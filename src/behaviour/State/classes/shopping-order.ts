@@ -1,14 +1,14 @@
-import { IShoppingOrderState } from "../interfaces/IShoppingOrderState";
-import { OrderPending } from "./OrderPending";
+import { ShoppingOrderStateProtocol } from "../protocols/shopping-order-state-protocol";
+import { OrderPending } from "./order-pending";
 
 export class ShoppingOrder {
-  private state: IShoppingOrderState = new OrderPending(this);
+  private state: ShoppingOrderStateProtocol = new OrderPending(this);
 
-  getState(): IShoppingOrderState {
+  getState(): ShoppingOrderStateProtocol {
     return this.state;
   }
 
-  setState(state: IShoppingOrderState): void {
+  setState(state: ShoppingOrderStateProtocol): void {
     this.state = state;
     console.log(`O estado do pedido agora é ${this.getStateName()}`);
   }

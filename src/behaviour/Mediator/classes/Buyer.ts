@@ -1,4 +1,4 @@
-import { Mediator } from "./Mediator";
+import { Mediator } from "./mediator";
 
 export class Buyer {
   constructor(private mediator: Mediator) {}

@@ -1,9 +1,9 @@
-import { ISmartHouseCommand } from '../interfaces/ISmartHouseCommand';
+import { SmartHouseCommandProtocol } from '../protocols/smart-house-protocol';
 
 export class SmartHouseApp {
-  private commands: { [k: string]: ISmartHouseCommand } = {};
+  private commands: { [k: string]: SmartHouseCommandProtocol } = {};
 
-  addCommand(key: string, command: ISmartHouseCommand): void {
+  addCommand(key: string, command: SmartHouseCommandProtocol): void {
     this.commands[key] = command;
   }
 

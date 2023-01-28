@@ -1,6 +1,6 @@
-import { Observable } from "./classes/Observable";
-import { ObserverOne } from "./classes/ObserverOne";
-import { ObserverTwo } from "./classes/ObserverTwo";
+import { Observable } from "./classes/observable";
+import { ObserverOne } from "./classes/observer-one";
+import { ObserverTwo } from "./classes/observer-two";
 
 const observable = new Observable();
 

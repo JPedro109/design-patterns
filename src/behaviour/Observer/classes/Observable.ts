@@ -1,13 +1,13 @@
-import { IObservable } from "../interfaces/IObservable";
-import { IObserver } from "../interfaces/IObserver";
+import { ObservableProtocol } from "../protocols/observable-protocol";
+import { ObserverProtocol } from "../protocols/observer-protocol";
 
-export class Observable implements IObservable {
+export class Observable implements ObservableProtocol {
 
-    private observers: IObserver[] = [];
+    private observers: ObserverProtocol[] = [];
 
     public number: number = 0;
 
-    subscribe(...observers: IObserver[]): void {
+    subscribe(...observers: ObserverProtocol[]): void {
         observers.forEach((observer) => {
             if (!this.observers.includes(observer)) {
                 this.observers.push(observer);
@@ -15,7 +15,7 @@ export class Observable implements IObservable {
         });
     }
 
-    unsubscribe(observer: IObserver): void {
+    unsubscribe(observer: ObserverProtocol): void {
         const observerIndex = this.observers.indexOf(observer);
 
         if (observerIndex !== -1) this.observers.splice(observerIndex, 1);

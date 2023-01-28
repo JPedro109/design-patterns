@@ -1,19 +1,19 @@
-import { IStoreProduct } from "../interfaces/IStoreProduct";
-import { AbstractDiscountStrategy } from "../abstracts/AbstractDiscountStrategy";
+import { StoreProductProtocol } from "../protocols/store-product-protocol";
+import { AbstractDiscountStrategy } from "../abstracts/abstract-discount-strategy";
 
 export class Store {
-    private products: IStoreProduct[] = [];
+    private products: StoreProductProtocol[] = [];
     private _discountStrategy: AbstractDiscountStrategy;
 
     set discount(discount: AbstractDiscountStrategy) {
         this._discountStrategy = discount;
     }
 
-    addProduct(...products: IStoreProduct[]): void {
+    addProduct(...products: StoreProductProtocol[]): void {
         products.forEach((product) => this.products.push(product));
     }
 
-    getProducts(): IStoreProduct[] {
+    getProducts(): StoreProductProtocol[] {
         return this.products;
     }
 

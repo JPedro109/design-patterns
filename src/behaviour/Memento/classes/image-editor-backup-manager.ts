@@ -1,5 +1,5 @@
-import { IMemento } from "../interfaces/IMemento";
-import { ImageEditorOriginator } from "./ImageEditorOriginator";
+import { IMemento } from "../protocols/IMemento";
+import { ImageEditorOriginator } from "./image-editor-originator";
 
 export class ImageEditorBackupManager {
   private mementos: IMemento[] = [];
