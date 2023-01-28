@@ -1,6 +1,6 @@
-import { IPrototype } from "../interfaces/IPrototype";
+import { PrototypeProtocol } from "../protocols/prototype-protocol";
 
-export class Person implements IPrototype {
+export class Person implements PrototypeProtocol {
     constructor(public name: string, public age: number) { }
 
     clone(): Person {

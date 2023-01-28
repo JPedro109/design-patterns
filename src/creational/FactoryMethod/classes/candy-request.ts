@@ -1,6 +1,6 @@
-import { IRequest } from "../interfaces/IRequest";
+import { RequestProtocol } from "../protocols/request-protocol";
 
-export class CandyRequest implements IRequest {
+export class CandyRequest implements RequestProtocol {
     
     constructor(private price: number) { }
 

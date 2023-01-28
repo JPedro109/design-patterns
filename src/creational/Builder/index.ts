@@ -1,4 +1,4 @@
-import { BuilderHouse } from "./classes/BuilderHouse";
+import { BuilderHouse } from "./classes/builder-house";
 
 const builder = new BuilderHouse();
 

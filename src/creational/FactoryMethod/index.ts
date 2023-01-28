@@ -1,5 +1,5 @@
-import { SaltyRequestFactory } from "./factories/SaltyRequestFactory";
-import { CandyRequestFactory } from "./factories/CandyRequestFactory";
+import { SaltyRequestFactory } from "./factories/salty-request-factory";
+import { CandyRequestFactory } from "./factories/candy-request-factory";
 
 const saltyRequestFactory = new SaltyRequestFactory();
 const candyRequestFactory = new CandyRequestFactory();

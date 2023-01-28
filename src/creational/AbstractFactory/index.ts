@@ -1,5 +1,5 @@
-import { EnterpriseCreateVehicleCustomerFactory } from "./classes/factories/EnterpriseCustomerVehicleFactory";
-import { IndividualCreateVehicleCustomerFactory } from "./classes/factories/IndividualCustomerVehicleFactory";
+import { EnterpriseCreateVehicleCustomerFactory } from "./classes/factories/enterprise-customer-vehicle-factory";
+import { IndividualCreateVehicleCustomerFactory } from "./classes/factories/individual-customer-vehicle-factory";
 
 const enterpriseFactory = new EnterpriseCreateVehicleCustomerFactory();
 const individualFactory = new IndividualCreateVehicleCustomerFactory();
