@@ -1,8 +1,8 @@
-import { DataStructure } from './classes/data-structure';
-import { Iterator } from './classes/iterator';
+import { DataStructure } from "./classes/data-structure";
+import { Iterator } from "./classes/iterator";
 
 const dataStructure = new DataStructure();
-dataStructure.addItem('A', 'B', 'C', 'D', 'E', 'F');
+dataStructure.addItem("A", "B", "C", "D", "E", "F");
 
 dataStructure.resetIterator();
 
