@@ -1,7 +1,7 @@
-import { ICustomer } from "../../../protocols/customer-protocol";
-import { IVehicle } from "../../../protocols/vehicle-protocol";
+import { CustomerProtocol } from "../../../protocols/customer-protocol";
+import { VehicleProtocol } from "../../../protocols/vehicle-protocol";
 
 export interface CreateVehicleCustomerFactory {
-  createCustomer(customerName: string): ICustomer;
-  createVehicle(vehicleName: string, customerName: string): IVehicle;
+  createCustomer(customerName: string): CustomerProtocol;
+  createVehicle(vehicleName: string, customerName: string): VehicleProtocol;
 }

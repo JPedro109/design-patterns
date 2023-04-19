@@ -1,6 +1,6 @@
-import { IMemento } from "../protocols/IMemento";
+import { MementoProtocol } from "../protocols/memento-protocol";
 
-export class Memento implements IMemento {
+export class Memento implements MementoProtocol {
   constructor(
     private name: string,
     private date: Date,

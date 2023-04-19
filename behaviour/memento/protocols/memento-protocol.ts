@@ -1,4 +1,4 @@
-export interface IMemento {
+export interface MementoProtocol {
     getName(): string;
     getDate(): Date;
 }

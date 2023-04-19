@@ -1,4 +1,4 @@
-import { IMemento } from "../protocols/IMemento";
+import { MementoProtocol } from "../protocols/memento-protocol";
 import { Memento } from "./memento";
 
 export class ImageEditorOriginator {
@@ -10,7 +10,7 @@ export class ImageEditorOriginator {
     this.filePath += "." + format;
   }
 
-  save(): Readonly<IMemento> {
+  save(): Readonly<MementoProtocol> {
     const date = new Date();
 
     return new Memento(
@@ -21,7 +21,7 @@ export class ImageEditorOriginator {
     );
   }
 
-  restore(memento: IMemento): void {
+  restore(memento: MementoProtocol): void {
     const concreteMemento = memento as Memento;
     this.filePath = concreteMemento.getFilePath();
     this.fileFormat = concreteMemento.getFileFormat();

@@ -1,8 +1,8 @@
-import { IMemento } from "../protocols/IMemento";
+import { MementoProtocol } from "../protocols/memento-protocol";
 import { ImageEditorOriginator } from "./image-editor-originator";
 
 export class ImageEditorBackupManager {
-  private mementos: IMemento[] = [];
+  private mementos: MementoProtocol[] = [];
 
   constructor(private readonly imageEditor: ImageEditorOriginator) {}
 

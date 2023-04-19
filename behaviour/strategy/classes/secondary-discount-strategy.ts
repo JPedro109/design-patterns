@@ -1,5 +1,5 @@
 import { AbstractDiscountStrategy } from "../abstracts/abstract-discount-strategy";
-import { Store } from "./Store";
+import { Store } from "./store";
 
 export class SecondaryDiscountStrategy extends AbstractDiscountStrategy {
     protected discount = 0;

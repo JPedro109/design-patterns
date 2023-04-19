@@ -1,4 +1,4 @@
-import { Store } from '../classes/Store';
+import { Store } from '../classes/store';
 
 export abstract class AbstractDiscountStrategy {
   protected discount = 0;

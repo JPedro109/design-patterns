@@ -1,7 +1,7 @@
-import { IObserver } from "./observer-protocol";
+import { ObserverProtocol } from "./observer-protocol";
 
 export interface ObservableProtocol {
-    subscribe(...observers: IObserver[]): void;
-    unsubscribe(observer: IObserver): void;
+    subscribe(...observers: ObserverProtocol[]): void;
+    unsubscribe(observer: ObserverProtocol): void;
     notify(): void;
 }
