@@ -1,4 +1,4 @@
-# Design Partners - GoF
+# Design Patterns - GoF
 
 ### Estudos sobre padrões de projeto
 
